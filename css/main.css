@@ -1,9 +1,12 @@
 body {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
+	font-size: 16px;
 	width: 100%;
 }
-
+p{
+	color: #757575;
+}
 a, a:active, a:focus{
 	text-decoration: none;
 	outline: none;
@@ -20,7 +23,7 @@ a, a:active, a:focus{
 }
 
 .logo {
-	width: 100px;
+	width: 80px;
 	height: 50px;
 	background: url("../images/logo.svg") no-repeat center center;
 	float: left;
@@ -36,13 +39,15 @@ nav {
 }
 
 nav  a {
-	margin-left: 20px;
+	margin-left: 15px;
 	color: #fff;
-	transition: color 0.5s;
+	transition: color .4s ease-out;
+	font-size: 1em;
+
 }
 
 nav a:hover{
-	color: #95a5a6;
+	color: #000;
 }
 .go-to {
 	width: 50px;
@@ -60,4 +65,44 @@ nav a:hover{
 
 a.go-to:hover{
 	transform: rotate(360deg);
+}
+
+
+/*----------------MAIN---------------------------*/
+
+#wrapper{
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#about{
+	padding-top: 50px;
+}
+}
+
+#about::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+aside p{
+	font-style: italic;
+	width: 70%;
+	float: right;
+}
+
+.circle {
+	float: left;
+	width: 200px;
+	height: 200px;
+	background-color: #343434;
+	border-radius: 200px;
+}
+
+.circle p{
+	text-align: center;
+	vertical-align: middle;
+    font-size: 2em;
+    color: #fff;
 }
