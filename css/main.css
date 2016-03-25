@@ -76,9 +76,11 @@ a.go-to:hover{
 	position: relative;
 }
 
+article{
+	width: 100%;
+}
 #about{
 	padding-top: 50px;
-}
 }
 
 #about::after{
@@ -86,23 +88,28 @@ a.go-to:hover{
 	display: block;
 	clear: both;
 }
-aside p{
-	font-style: italic;
+
+#first{
 	width: 70%;
 	float: right;
 }
 
-.circle {
-	float: left;
-	width: 200px;
-	height: 200px;
-	background-color: #343434;
-	border-radius: 200px;
+p.me{
+	font-style: italic;
+	margin: 0;
+	padding-left: 20px;
 }
 
-.circle p{
-	text-align: center;
-	vertical-align: middle;
-    font-size: 2em;
-    color: #fff;
+.person {
+	width: 28%;
+	height: 300px;
+	background: url("../images/people.svg") no-repeat;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+hr {
+	clear:both;
+	bottom: black solid 2px;
 }
